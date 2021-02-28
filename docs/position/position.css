@@ -1,0 +1,34 @@
+body {
+  color: white;
+}
+
+.parent {
+  position: static;
+}
+
+.static {
+  background: #4285F4;
+  width: 100px;
+  height: 100px;
+}
+
+.relative {
+  position: relative;
+  background: #FBBC05;
+  width: 100px;
+  height: 100px;
+}
+
+.absolute {
+  position: absolute;
+  background: #EA4335;
+  width: 100px;
+  height: 100px;
+}
+
+.fixed {
+  position: fixed;
+  background: #34A853;
+  width: 100px;
+  height: 100px;
+}
