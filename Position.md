@@ -77,7 +77,7 @@ position: static;
 ```
 기본 속성으로 position을 지정하지 않으면 `position: static;`이 된다.
 
-`top, right, bottom, left, z-index` 값을 수정은 되지만 적용이 되지 않는다.
+`top, right, bottom, left, z-index` 값이 수정은 되지만 적용이 되지 않는다.
 
 **static을 제외한 모든 position값은 `top, right, bottom, left, z-index` 값을 수정하면 바로 적용 된다.**
 
@@ -119,7 +119,7 @@ position: absolute;
 
 ❔ `z-index: -1;` 적용
 
-❔ `.absolute` class에 `position: relative;`,  `position: absolute;` 적용
+❔ `.parent` class에 `position: relative;`,  `position: absolute;` 적용
 
 ## fixed
 ```css
@@ -135,4 +135,4 @@ absolute와 비슷하지만 차이점은 조상과 상관 없이 `top, right, bo
 
 ❔ `z-index: -1;` 적용
 
-❔ `.absolute` class에 `position: relative;`,  `position: absolute;` 적용
+❔ `.parent` class에 `position: fixed;` 적용
