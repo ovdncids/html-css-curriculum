@@ -136,3 +136,8 @@ absolute와 비슷하지만 차이점은 조상과 상관 없이 `top, right, bo
 ❔ `z-index: -1;` 적용
 
 ❔ `.parent` class에 `position: fixed;` 적용
+
+## 참조
+https://developer.mozilla.org/ko/docs/Web/CSS/position
+
+https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index
