@@ -11,66 +11,6 @@
 노란색: #FBBC05
 녹색: #34A853 -->
 
-position.html
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link href="./index3.css" rel="stylesheet">
-    <title>HTML 기본 구조</title>
-  </head>
-  <body>
-    <div class="static">static1</div>
-    <div class="parent">
-      <div class="relative">relative</div>
-      <div class="static">static2</div>
-      <div class="absolute">absolute</div>
-      <div class="static">static3</div>
-      <div class="fixed">fixed</div>
-    </div>
-    <div class="static">static4</div>
-  </body>
-</html>
-```
-position.css
-```css
-body {
-  color: white;
-}
-
-.parent {
-  position: static;
-}
-
-.static {
-  background: #4285F4;
-  width: 100px;
-  height: 100px;
-}
-
-.relative {
-  position: relative;
-  background: #FBBC05;
-  width: 100px;
-  height: 100px;
-}
-
-.absolute {
-  position: absolute;
-  background: #EA4335;
-  width: 100px;
-  height: 100px;
-}
-
-.fixed {
-  position: fixed;
-  background: #34A853;
-  width: 100px;
-  height: 100px;
-}
-```
-
 ## static
 ```css
 position: static;
