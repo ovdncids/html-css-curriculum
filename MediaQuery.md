@@ -3,7 +3,7 @@
 * [데모](https://ovdncids.github.io/html-css-curriculum/media-query)
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
