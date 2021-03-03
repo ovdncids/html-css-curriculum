@@ -79,7 +79,7 @@ li {
 + font-size: 1rem;
 }
 ```
-* `ul`이 `font-size: 0;` 일때 `margin` 없어지는것 확인
+* `ul` 태그가 `font-size: 0;` 일때 `margin` 없어지는것 확인
 * 아이템 사이 공백 설명
 
 ### 문서 가운데 정렬 하기
@@ -140,3 +140,7 @@ body {
 + font-family: 'Gugi', cursive;
 }
 ```
+
+## 과제
+* `li` 태그의 `width: 200px;` 줄이고, 크기를 조절하여 아이템을 1개에서 6개까지 보여주기
+
