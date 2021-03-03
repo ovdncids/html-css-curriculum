@@ -3,7 +3,7 @@
 * [데모](https://ovdncids.github.io/html-css-curriculum/position)
 
 ## z-index
-모든 속성의 기본 z-index 값은 0이다
+* 모든 속성의 기본 z-index 값은 0이다
 
 <!-- 구글 색상
 파란색: #4285F4
