@@ -111,6 +111,20 @@ li {
 }
 ```
 * ❔ `max-width: 599px` 일때 `width: 300px;` 만들기
+* ❔ `color: #34A853;` 수정
+
+<details><summary>정답</summary>
+
+```css
+@media screen and (max-width: 599px) {
+  .container {
+    width: 300px;
+    color: #34A853;
+  }
+}
+```
+
+</details>
 
 ## 구글 폰트 적용
 https://fonts.google.com/
@@ -122,6 +136,6 @@ index.html
 index.css
 ```diff
 body {
-  font-family: 'Gugi', cursive;
++ font-family: 'Gugi', cursive;
 }
 ```
