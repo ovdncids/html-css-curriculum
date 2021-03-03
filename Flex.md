@@ -60,7 +60,7 @@ https://www.emojiengine.com/ko/
       </section>
 ```
 
-## css 파일 연결 하기
+## CSS 파일 연결 하기
 ```html
   <head>
     <link href="./index.css" rel="stylesheet">
