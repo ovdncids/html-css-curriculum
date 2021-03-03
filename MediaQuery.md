@@ -113,7 +113,7 @@ li {
 * ❔ `max-width: 599px` 일때 `width: 300px;` 만들기
 * ❔ `color: #34A853;` 수정
 
-<details><summary>정답</summary>
+* <details><summary>정답</summary>
 
 ```css
 @media screen and (max-width: 599px) {
