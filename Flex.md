@@ -138,4 +138,4 @@ header div:first-child {
 ```
 
 ## 과제
-* nav를 오른쪽으로, header를 아래로 정렬 시키기
+* ❔ nav를 오른쪽으로, header를 아래로 정렬 시키기
