@@ -139,3 +139,18 @@ body {
 + font-family: 'Gugi', cursive;
 }
 ```
+
+
+
+    abc
+    def
+
+    <details><summary>정답</summary>
+      @media screen and (max-width: 599px) {
+        .container {
+          width: 300px;
+          color: #34A853;
+        }
+      }
+    </details>
+
