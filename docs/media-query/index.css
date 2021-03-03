@@ -1,16 +1,10 @@
-body, ul {
+body {
   margin: 0;
-  padding: 0;
   font-family: 'Gugi', cursive;
 }
 
-.container {
- margin: 0 auto;
- width: 1200px;
- color: #4285F4;
-}
-
 ul {
+  padding-left: 0;
   font-size: 0;
 }
 
@@ -18,27 +12,33 @@ li {
   display: inline-block;
   width: 300px;
   height: 160px;
-  box-sizing: border-box;
-  border: 1px #DADCE0 solid;
   background-color: #F2F2F2;
-  font-size: 16px;
+  border: 1px #DADCE0 solid;
+  box-sizing: border-box;
+  font-size: 1rem;
 }
 
-@media screen and (max-width: 1200px) {
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  color: #4285F4;
+}
+
+@media screen and (max-width: 1199px) {
   .container {
     width: 900px;
     color: #EA4335;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
   .container {
     width: 600px;
-    color: #FBBC05;
+    color: #EA4335;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .container {
     width: 300px;
     color: #34A853;
