@@ -8,4 +8,4 @@
 
 * [미디어 쿼리](MediaQuery.md)
 
-* [그림자](Shadow.md)
+* [그림자](BoxShadow.md)
