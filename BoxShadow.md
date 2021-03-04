@@ -13,3 +13,6 @@ box-shadow: 1px 1px 1px 1px #4285F4;
 * ❔ `x`, `y`, `z`, `크기`, `색` 변경
 * 그림자가 2개일 경우 설명
 * inset 설명
+
+## 참조
+https://developer.mozilla.org/ko/docs/Web/CSS/box-shadow
