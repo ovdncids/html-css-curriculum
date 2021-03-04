@@ -1,0 +1,26 @@
+.item1 {
+  display: block;
+  width: 300px;
+  height: 160px;
+  margin: 32px;
+  background-color: #F2F2F2;
+  box-shadow: 1px 1px 1px 1px #4285F4;
+}
+
+.item2 {
+  display: block;
+  width: 300px;
+  height: 160px;
+  margin: 32px;
+  background-color: #F2F2F2;
+  box-shadow: 1px 1px 1px 1px #EA4335, 1px 1px 1px 1px #FBBC05;
+}
+
+.item3 {
+  display: block;
+  width: 300px;
+  height: 160px;
+  margin: 32px;
+  background-color: #F2F2F2;
+  box-shadow: 1px 1px 1px 1px #34A853 inset;
+}
