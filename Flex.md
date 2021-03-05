@@ -139,3 +139,4 @@ header div:first-child {
 
 ## 과제
 * ❔ nav를 오른쪽으로, header를 아래로 정렬 시키기
+* [결과 이미지](https://ovdncids.github.io/html-css-curriculum/flex/reverse-layout.png)
