@@ -31,4 +31,9 @@ body {
   background: #34A853;
   width: 100px;
   height: 100px;
+  z-index: -1;
+}
+
+.header, .footer {
+  background: #235bb6;
 }
