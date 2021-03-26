@@ -1,0 +1,72 @@
+/* 모든것(*): 0점 */
+* {
+  padding: 4px;
+}
+* {
+  padding: 8px;
+}
+
+/* 태그이름: 1점 */
+body {
+  background-color: red;
+}
+body {
+  background-color: white;
+}
+
+/* 클래스명(.class): 10점 */
+.tag-ul {
+  background-color: orange;
+}
+ul {
+  background-color: white;
+}
+
+/* 가상클래스속성(:속성명): 10점 */
+li:first-child {
+  background-color: yellow;
+}
+.tag-li-first {
+  background-color: white;
+}
+/* 문제: .tag-li-first를 우선순위로 보이려면 */
+
+/* 속성선택자([href]): 10점 */
+.animal {
+  background-color: green;
+}
+[href*="https://naver"] {
+  background-color: white;
+}
+/* 문제: .animal을 우선순위로 보이려면 */
+
+a#people {
+  background-color: blue;
+}
+
+/* :link는 크롬에서 확인 할 수 없다 */
+a#people:link {
+  color: red;
+  text-decoration: none;
+  background-color: white;
+}
+
+a#people:visited {
+  color: orange;
+  background-color: black;
+}
+
+a#people:hover {
+  color: green;
+  background-color: silver;
+}
+
+a#people:active {
+  color: purple;
+  background-color: purple;
+}
+
+/* !important: 최고점 */
+li a {
+  background-color: skyblue !important;
+}
