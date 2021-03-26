@@ -114,3 +114,15 @@ li a {
   background-color: skyblue !important;
 }
 ```
+
+## 점수표
+| 지정방법 | 예제 | 점수 |
+|---|:---|:---|
+| !important | !important | 최고점 |
+| 직접기입 | style="" | 1000점 |
+| ID | #sample | 100점 |
+| Class | .sample | 10점 |
+| 속성선택자 | a[href*="sample"] | 10점 |
+| 가상클래스속성 | :first-child | 10점 |
+| 태그선택자 | ul | 1점 |
+| 전체선택 | *  | 0점 |
