@@ -251,3 +251,120 @@ index.css
   flex: 1;
 }
 ```
+
+## 본문 메뉴 만들기
+index.html
+```diff
+- <div class="article-menu"></div>
+```
+```html
+<div class="article-menu">
+  <div class="article-menu-grid active">
+    <span class="material-icons">grid_on</span>
+  </div>
+  <div class="article-menu-tv">
+    <span class="material-icons">live_tv</span>
+  </div>
+  <div class="article-menu-contact">
+    <span class="material-icons">perm_contact_calendar</span>
+  </div>
+</div>
+```
+
+index.css
+```css
+.article-menu {
+  display: flex;
+}
+.article-menu-grid, .article-menu-tv, .article-menu-contact {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.article-menu-grid.active, .article-menu-tv.active, .article-menu-contact.active {
+  border-bottom: 1px solid white;
+}
+```
+
+## 본문 만들기
+index.html
+```diff
+- <div class="article-contents"></div>
+```
+```html
+<div class="article-contents">
+  <div class="article-contents-row">
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">play_arrow</span>
+    </section>
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">play_arrow</span>
+    </section>
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">play_arrow</span>
+    </section>
+  </div>
+  <div class="article-contents-row">
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">content_copy</span>
+    </section>
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">content_copy</span>
+    </section>
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">content_copy</span>
+    </section>
+  </div>
+  <div class="article-contents-row">
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">content_copy</span>
+    </section>
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">content_copy</span>
+    </section>
+    <section>
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+      <span class="material-icons">content_copy</span>
+    </section>
+  </div>
+</div>
+```
+
+index.css
+```css
+.article-contents-row {
+  display: flex;
+  font-size: 0;
+}
+.article-contents-row section {
+  margin: 1px;
+  position: relative;
+}
+.article-contents-row section img {
+  width: 100%;
+}
+.article-contents-row section span {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+```
+
+
+
+
+
+
+
+
+본문 메뉴 만들기 밑줄 길이 맞추기
