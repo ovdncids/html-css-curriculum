@@ -190,3 +190,64 @@ index.css
 }
 ```
 
+## 회원 설명 만들기
+index.html
+```diff
+- <div class="user-description"></div>
+```
+```html
+<div class="user-description">
+  <p>
+    이지금 IU<br>
+    Celebrity ⭐💛💛💛💛<br>
+    youtu.be/O-q1KalFCLU<br>
+    dustziii_님, stehzlla4님 외 52명이 팔루우합니다.<br>
+    번역 보기
+  </p>
+</div>
+```
+
+index.css
+```css
+.user-description {
+  padding: 8px;
+}
+```
+
+## 회원 메뉴 만들기
+index.html
+```diff
+- <div class="user-menu"></div>
+```
+```html
+<div class="user-menu">
+  <div class="user-menu-following">
+    팔로잉<span class="material-icons">expand_more</span>
+  </div>
+  <div class="user-menu-message">
+    메시지
+  </div>
+  <div class="user-menu-more">
+    <span class="material-icons">expand_more</span>
+  </div>
+</div>
+```
+
+index.css
+```css
+.user-menu {
+  padding: 8px;
+  display: flex;
+}
+.user-menu-following, .user-menu-message, .user-menu-more {
+  border: 2px solid #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.user-menu-following, .user-menu-message {
+  margin-right: 4px;
+  flex: 1;
+}
+```
