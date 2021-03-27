@@ -105,6 +105,8 @@ index.html
   </div>
 </header>
 ```
+
+index.css
 ```css
 header {
   display: flex;
@@ -123,4 +125,68 @@ header {
 }
 ```
 * ❔ `Name`과 `check_circle 아이콘` 간격 띄우기
+
+## 회원 정보 만들기
+index.html
+```diff
+- <div class="user-info"></div>
+```
+```html
+<div class="user-info">
+  <div class="user-avatar">
+    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+  </div>
+  <div class="user-count-post">
+    <strong>571</strong>
+    <span>게시판</span>
+  </div>
+  <div class="user-count-follower">
+    <strong>1,909만</strong>
+    <span>팔로워</span>
+  </div>
+  <div class="user-count-following">
+    <strong>111</strong>
+    <span>팔로잉</span>
+  </div>
+</div>
+```
+
+index.css
+```css
+.user-info {
+  display: flex;
+  padding: 8px;
+}
+.user-avatar, .user-count-post, .user-count-follower, .user-count-following {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.user-avatar img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+}
+.user-avatar::after {
+  content: '';
+  border: 2px solid #3F3F3F;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+```
 
