@@ -1,6 +1,7 @@
 # 인스타그램 클론
 
-* [데모](https://ovdncids.github.io/html-css-curriculum/instagram)
+* [데모1](https://ovdncids.github.io/html-css-curriculum/instagram)
+* [데모2](https://ovdncids.github.io/html-css-curriculum/instagram/index2.html)
 
 ## HTML 기본 구조 만들기
 index.html
@@ -360,11 +361,54 @@ index.css
 }
 ```
 
+## Footer 만들기
+index.html
+```diff
+- <footer></footer>
+```
+```html
+<footer>
+  <div><span class="material-icons-outlined">home</span></div>
+  <div><span class="material-icons">search</span></div>
+  <div><span class="material-icons-outlined">shop</span></div>
+  <div><span class="material-icons-outlined">shopping_bag</span></div>
+  <div><span class="material-icons-outlined">account_circle</span></div>
+</footer>
+```
 
+index.css
+```css
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  padding: 8px;
+  border-top: 2px solid #050505;
+  width: 100%;
+  background-color: black;
+}
+footer div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
 
+### 이미지 짤리는 부분 보이기
+```css
+article {
+  margin-bottom: 42px;
+}
+```
 
+## 본문 메뉴 밑줄 길이 맞추기
+```css
+.article-menu-grid, .article-menu-tv, .article-menu-contact {
+  ...
+  margin: 1px;
+}
+```
 
-
-
-
-본문 메뉴 만들기 밑줄 길이 맞추기
+## 과제
+* [데모2](https://ovdncids.github.io/html-css-curriculum/instagram/index2.html) 만들어 보기
