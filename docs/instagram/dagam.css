@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  padding: 8px;
+}
+.header-title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-check-icon {
+  color: #3697EF;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.user-info {
+  display: flex;
+  padding: 8px;
+}
+.user-avatar, .user-count-post, .user-count-follower, .user-count-following {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.user-avatar img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+}
+.user-avatar::after {
+  content: '';
+  border: 2px solid #3F3F3F;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.user-description {
+  padding: 8px;
+}
+
+.user-menu {
+  padding: 8px;
+  display: flex;
+}
+.user-menu-following, .user-menu-message, .user-menu-more {
+  border: 2px solid #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.user-menu-following, .user-menu-message {
+  margin-right: 4px;
+  flex: 1;
+}
+
+article {
+  margin-bottom: 42px;
+}
+.article-menu {
+  display: flex;
+}
+.article-menu-grid, .article-menu-tv, .article-menu-contact {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 1px;
+}
+.article-menu-grid.active, .article-menu-tv.active, .article-menu-contact.active {
+  border-bottom: 1px solid white;
+}
+
+.article-contents-row {
+  display: flex;
+  font-size: 0;
+}
+.article-contents-row section {
+  margin: 1px;
+  position: relative;
+  width: 100%;
+}
+.article-contents-row section form input {
+  width: 100%;
+}
+.article-contents-row section span {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  padding: 8px;
+  border-top: 2px solid #050505;
+  width: 100%;
+  background-color: black;
+}
+footer div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
