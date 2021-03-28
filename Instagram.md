@@ -81,6 +81,7 @@ icons.html
 </body>
 </html>
 ```
+https://material.io/resources/icons/?style=baseline
 
 ## Header 만들기
 index.html
@@ -110,19 +111,19 @@ index.html
 index.css
 ```css
 header {
-  display: flex;
-  padding: 8px;
+  /* display: flex; */
+  /* padding: 8px; */
 }
 .header-title {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* flex: 1; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .header-check-icon {
-  color: #3697EF;
-  font-size: 12px;
-  margin-top: 4px;
+  /* color: #3697EF; */
+  /* font-size: 12px; */
+  /* margin-top: 4px; */
 }
 ```
 * ❔ `Name`과 `check_circle 아이콘` 간격 띄우기
@@ -155,39 +156,39 @@ index.html
 index.css
 ```css
 .user-info {
-  display: flex;
-  padding: 8px;
+  /* display: flex; */
+  /* padding: 8px; */
 }
 .user-avatar, .user-count-post, .user-count-follower, .user-count-following {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* flex: 1; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .user-avatar {
-  position: relative;
-  width: 80px;
-  height: 80px;
+  /* position: relative; */
+  /* width: 80px; */
+  /* height: 80px; */
 }
 .user-avatar img {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  border-radius: 50%;
+  /* width: 70px; */
+  /* height: 70px; */
+  /* position: absolute; */
+  /* left: 5px; */
+  /* top: 5px; */
+  /* border-radius: 50%; */
 }
 .user-avatar::after {
   content: '';
-  border: 2px solid #3F3F3F;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 50%;
-  box-sizing: border-box;
+  /* border: 2px solid #3F3F3F; */
+  /* width: 80px; */
+  /* height: 80px; */
+  /* position: absolute; */
+  /* left: 0; */
+  /* top: 0; */
+  /* border-radius: 50%; */
+  /* box-sizing: border-box; */
 }
 ```
 
@@ -237,19 +238,19 @@ index.html
 index.css
 ```css
 .user-menu {
-  padding: 8px;
-  display: flex;
+  /* display: flex; */
+  /* padding: 8px; */
 }
 .user-menu-following, .user-menu-message, .user-menu-more {
-  border: 2px solid #3F3F3F;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
+  /* border: 2px solid #3F3F3F; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* border-radius: 4px; */
 }
 .user-menu-following, .user-menu-message {
-  margin-right: 4px;
-  flex: 1;
+  /* flex: 1; */
+  /* margin-right: 4px; */
 }
 ```
 
@@ -275,17 +276,17 @@ index.html
 index.css
 ```css
 .article-menu {
-  display: flex;
+  /* display: flex; */
 }
 .article-menu-grid, .article-menu-tv, .article-menu-contact {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
+  /* flex: 1; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 8px; */
 }
 .article-menu-grid.active, .article-menu-tv.active, .article-menu-contact.active {
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
 }
 ```
 
@@ -344,20 +345,20 @@ index.html
 index.css
 ```css
 .article-contents-row {
-  display: flex;
-  font-size: 0;
+  /* display: flex; */
+  /* font-size: 0; */
 }
 .article-contents-row section {
-  margin: 1px;
-  position: relative;
+  /* margin: 1px; */
+  /* position: relative; */
 }
 .article-contents-row section img {
-  width: 100%;
+  /* width: 100%; */
 }
 .article-contents-row section span {
-  position: absolute;
-  right: 8px;
-  top: 8px;
+  /* position: absolute; */
+  /* right: 8px; */
+  /* top: 8px; */
 }
 ```
 
@@ -379,19 +380,19 @@ index.html
 index.css
 ```css
 footer {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  padding: 8px;
-  border-top: 2px solid #050505;
-  width: 100%;
-  background-color: black;
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* display: flex; */
+  /* padding: 8px; */
+  /* border-top: 2px solid #050505; */
+  /* width: 100%; */
+  /* background-color: black; */
 }
 footer div {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* flex: 1; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 ```
 
