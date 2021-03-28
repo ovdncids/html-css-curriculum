@@ -141,7 +141,7 @@ index.html
   </div>
   <div class="user-count-post">
     <strong>571</strong>
-    <span>게시판</span>
+    <span>게시물</span>
   </div>
   <div class="user-count-follower">
     <strong>1,909만</strong>
