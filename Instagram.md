@@ -352,6 +352,7 @@ index.css
 .article-contents-row section {
   /* margin: 1px; */
   /* position: relative; */
+  /* width: 100%; */
 }
 .article-contents-row section img {
   /* width: 100%; */
