@@ -203,7 +203,7 @@ index.html
   <p>
     이지금 IU<br>
     Celebrity ⭐💛💛💛💛<br>
-    youtu.be/O-q1KalFCLU<br>
+    youtu.be/v7bnOxV4jAc<br>
     dustziii_님, stehzlla4님 외 52명이 팔루우합니다.<br>
     번역 보기
   </p>
