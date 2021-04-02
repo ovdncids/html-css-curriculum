@@ -304,3 +304,175 @@ index.css
   /* font-size: 12px; */
 }
 ```
+
+## 첫번째 포스트 만들기
+index.html
+```diff
+- <div class="post"></div>
+```
+```html
+<div class="post">
+  <div class="post-info">
+    <div class="user-avatar">
+      <img
+        src="https://yt3.ggpht.com/ytc/AAUvwnim8ZywaqH1xNHeC9hzjC9TodC1ZNlsOu8wEuNCiw=s88-c-k-c0x00ffffff-no-rj"
+        alt="Avatar"
+      >
+    </div>
+    <div class="post-user">
+      <div class="post-user-name">
+        <strong>Wikitree - 위키트리</strong>
+        <span class="material-icons check-icon">check_circle</span>
+      </div>
+      <div class="post-time">
+        23시간 · <span class="material-icons">public</span>
+      </div>
+    </div>
+    <span class="material-icons post-more">more_vert</span>
+  </div>
+  <div class="post-shortcut">
+    연기 경력 30년 차 배우...
+  </div>
+  <div class="post-contents">
+    <div class="post-images">
+      <div class="post-images-bottom">
+        <img
+          width="80"
+          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTZfMTIz%2FMDAxNjE1ODk2Nzg4OTg0.aJgztgz-aQjNulUSyI6HjZmF0W62ybu9DcHq6D85kGog.AuVKRadQnOL4fk-jI5H675COeEeghkXh8BfNWDjc3sog.JPEG.free7790%2F1.2.jpg&amp;type=sc960_832"
+          alt="감우성3"
+        >
+      </div>
+      <div class="post-images-main">
+        <div>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5712%2F2021%2F03%2F18%2F0000091714_001_20210318084958753.jpg&amp;type=sc960_832"
+            alt="감우성1"
+          >
+        </div>
+        <div>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5339%2F2021%2F03%2F17%2F0000241332_001_20210317140757074.jpg&amp;type=sc960_832"
+            alt="감우성2"
+          >
+        </div>
+      </div>
+      <span class="material-icons">info</span>
+    </div>
+    <div class="post-title">
+      <div>WIKITREE.CO.KR</div>
+      <strong>"결국..." '조선구마사' 최고 선배 감우성, 드디어 입 열었다 (전문)</strong>
+    </div>
+    <div class="post-message">
+      <span><strong>이소정</strong>님이 댓글을 남겼습니다.</span>
+      <span class="material-icons post-more">more_vert</span>
+    </div>
+  </div>
+</div>
+```
+
+index.css
+```css
+.post-info {
+  /* display: flex; */
+  /* padding: 8px 8px 4px 8px; */
+}
+.post-user {
+  /* margin-left: 8px; */
+  /* flex: 1; */
+}
+.post-user-name, .post-user-time {
+  /* display: flex; */
+  /* align-items: center; */
+}
+.post-user-name .check-icon {
+  /* color: #1A78F2; */
+  /* font-size: 14px; */
+  /* margin-top: 2px; */
+  /* margin-left: 4px; */
+}
+.post-time, .post-time span {
+  /* font-size: 12px; */
+  /* color: #7B7A7C; */
+}
+.post-more {
+  /* transform: rotate(90deg); */
+  /* color: #5C5C5C; */
+  /* height: 24px; */
+}
+.post-shortcut {
+  /* padding: 0 8px 8px 8px; */
+}
+.post-images {
+  /* position: relative; */
+}
+.post-images-main {
+  /* display: flex; */
+  /* font-size: 0; */
+}
+.post-images-main div {
+  /* width: 50%; */
+}
+.post-images-main div:nth-child(2) {
+  /* padding-left: 1px; */
+}
+.post-images-main div img {
+  /* position: relative; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+.post-images-bottom {
+  /* position: absolute; */
+  /* width: 100%; */
+  /* bottom: 0; */
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.post-images-bottom img {
+  /* position: relative; */
+  /* z-index: 1; */
+  /* width: 25%; */
+  /* height: 25%; */
+  /* border: 4px solid yellow; */
+}
+.post-images span {
+  /* position: absolute; */
+  /* top: 8px; */
+  /* right: 8px; */
+  /* background-color: black; */
+  /* color: white; */
+  /* border-radius: 50%; */
+}
+.post-title {
+  /* border: 1px solid #F1F1F1; */
+  /* background-color: #F5F6F9; */
+  /* padding: 8px; */
+}
+.post-title div {
+  /* font-size: 12px; */
+  /* color: #7B7A7C; */
+}
+.post-title strong {
+  /* font-size: 13px; */
+}
+.post-message {
+  /* display: flex; */
+  /* align-items: center; */
+  /* padding: 8px; */
+  /* border-bottom: 1px solid #EAEAEA; */
+}
+.post-message span:nth-child(1) {
+  /* flex: 1; */
+}
+.post-image {
+  /* position: relative; */
+}
+.post-image span {
+  /* position: absolute; */
+  /* right: 12px; */
+  /* bottom: 12px; */
+  /* background-color: #212630; */
+  /* color: white; */
+  /* border-radius: 50%; */
+  /* padding: 4px; */
+}
+```
