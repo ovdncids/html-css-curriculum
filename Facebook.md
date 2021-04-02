@@ -49,3 +49,47 @@ body {
   font-size: 14px;
 }
 ```
+
+## Header 만들기
+index.html
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+```
+```diff
+- <header></header>
+```
+```html
+<header>
+  <div class="header-title">
+    <img
+      src="https://w.namu.la/s/973378361c71397a08ab94a2c22e810a78cd676aac0e9f3db0c3c95698947574541e9191b623365b6149a706e0128fa5e35183fdbcd247efaf0fe486caa4c57a2e24ae2afe0e353614503b0d620a46980cc29e4c889f01a5e901d8fa3ce09673"
+      height="24"
+      alt="facebook-log"
+    >
+  </div>
+  <div class="header-memu">
+    <span class="material-icons">search</span>
+    <span class="material-icons">offline_bolt</span>
+  </div>
+</header>
+```
+
+index.css
+```css
+header {
+  /* display: flex; */
+  /* padding: 8px; */
+  /* border-bottom: 1px solid #F1F1F1; */
+}
+.header-title {
+  /* flex: 1; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+.header-memu span {
+  /* background-color: #DFE0E6; */
+  /* padding: 4px; */
+  /* border-radius: 50%; */
+}
+```
