@@ -463,6 +463,61 @@ index.css
 .post-message span:nth-child(1) {
   /* flex: 1; */
 }
+```
+
+## 두번째 포스트 만들기
+index.html
+```diff
+- <div class="post"></div>
+```
+```html
+<div class="post">
+  <div class="post-info">
+    <div class="user-avatar">
+      <img
+        src="https://scontent.ficn4-1.fna.fbcdn.net/v/t1.18169-9/15578946_348326135553206_7636356053109620976_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=e3f864&amp;_nc_ohc=ETlmNIE1grUAX9psAFV&amp;_nc_ht=scontent.ficn4-1.fna&amp;oh=ec4e5ca0ecd5b3c2b4ab69152396e9af&amp;oe=6088C76C"
+        alt="Avatar"
+      >
+    </div>
+    <div class="post-user">
+      <div class="post-user-name">
+        <strong>음악인의 라이브</strong>
+      </div>
+      <div class="post-time">
+        1일 · <span class="material-icons">public</span>
+      </div>
+    </div>
+    <span class="material-icons-outlined">thumb_up_alt</span>
+  </div>
+  <div class="post-shortcut">
+    생각이 많아질때는 짱구의 오또카지 춤을 춰보자.gif
+  </div>
+  <div class="post-contents">
+    <div class="post-image">
+      <img
+        width="100%"
+        src="https://i.ytimg.com/vi/VySGQsqI_-o/maxresdefault.jpg"
+        alt="Avatar"
+      >
+      <span class="material-icons">volume_off</span>
+    </div>
+    <div class="post-status">
+      <span class="post-status-like">
+        <span class="material-icons">thumb_up_alt</span>
+        <span>1,116개</span>
+      </span>
+      <span class="post-status-info">
+        <span>댓글 1,554개</span>
+        <span>공유 275회</span>
+        <span>조회 15.2만회</span>
+      </span>
+    </div>
+  </div>
+</div>
+```
+
+index.css
+```css
 .post-image {
   /* position: relative; */
 }
@@ -475,4 +530,214 @@ index.css
   /* border-radius: 50%; */
   /* padding: 4px; */
 }
+.post-status {
+  /* display: flex; */
+  /* padding: 8px; */
+  /* font-size: 12px; */
+  /* color: #7B7A7C; */
+  /* border-bottom: 1px solid #EAEAEA; */
+}
+.post-status-like {
+  /* flex: 1; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+.post-status-like span:nth-child(1) {
+  /* font-size: 12px; */
+  /* background-color: #1A78F2; */
+  /* color: white; */
+  /* border-radius: 50%; */
+  /* padding: 2px; */
+}
+.post-status-like span:nth-child(2) {
+  /* margin-left: 4px; */
+}
+.post-status-info span:nth-child(2) {
+  /* margin: 0 4px; */
+}
 ```
+
+## 좋아요, 댓글, 공유하기 만들기
+index.html
+```diff
+- <div class="like-comment-share"></div>
+```
+```html
+<div class="like-comment-share">
+  <span>
+    <span class="material-icons-outlined">thumb_up_alt</span>
+    <strong>좋아요</strong>
+  </span>
+  <span>
+    <span class="material-icons">chat_bubble_outline</span>
+    <strong>댓글 달기</strong>
+  </span>
+  <span>
+    <span class="material-icons">shortcut</span>
+    <strong>공유하기</strong>
+  </span>
+</div>
+```
+
+index.css
+```css
+.like-comment-share {
+  /* display: flex; */
+  /* padding: 8px; */
+  /* color: #7B7A7C; */
+  /* border-bottom: 2px solid #EAEAEA; */
+}
+.like-comment-share > span {
+  /* flex: 1; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.like-comment-share > span strong {
+  /* margin-left: 8px; */
+}
+```
+
+## 댓글 만들기
+index.html
+```diff
+- <div class="comments"></div>
+```
+```html
+<div class="comments">
+  <div class="post-info">
+    <div class="user-avatar">
+      <img
+        src="https://www.nicepng.com/png/full/136-1366211_group-of-10-guys-login-user-icon-png.png"
+        alt="Avatar"
+      >
+    </div>
+    <div class="comment">
+      <strong>이소정</strong>
+      <p><span>Emma Roh</span> 알지?</p>
+    </div>
+  </div>
+  <div class="comment-like-reply">
+    <strong>좋아요</strong>
+    <strong>댓글 달기</strong>
+  </div>
+  <div class="post-info">
+    <div class="user-avatar">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="Avatar"
+      >
+      <img
+        class="kakao"
+        height="120"
+        src="./images/kakao-emoticon.png"
+        alt="Kakao"
+      >
+    </div>
+    <div class="comment-create">
+      <input placeholder="댓글을 입력하세요...">
+      <span class="material-icons">insert_emoticon</span>
+    </div>
+  </div>
+</div>
+```
+
+index.css
+```css
+.comments {
+  /* margin-bottom: 42px; */
+  /* padding-bottom: 8px; */
+  /* border-bottom: 7px solid #BEBFC6; */
+}
+.comment {
+  /* margin-left: 8px; */
+  /* background-color: #EDEFF3; */
+  /* border-radius: 16px; */
+  /* padding: 4px 12px; */
+}
+.comment p span {
+  /* color: #1A78F2; */
+}
+.comment-like-reply {
+  /* margin-left: 64px; */
+  /* color: #7B7A7C; */
+}
+.comment-like-reply strong:nth-child(2) {
+  /* margin-left: 8px; */
+}
+.user-avatar .kakao {
+  /* position: absolute; */
+  /* top: 0px; */
+  /* left: 10px; */
+}
+.comment-create {
+  /* flex: 1; */
+  /* margin-left: 8px; */
+  /* position: relative; */
+  /* display: flex; */
+}
+.comment-create input {
+  /* flex: 1; */
+  /* background-color: #EDEFF3; */
+  /* border: 1px solid #7B7A7C; */
+  /* border-radius: 16px; */
+  /* padding: 8px 12px; */
+}
+.comment-create span {
+  /* position: absolute; */
+  /* color: #7B7A7C; */
+  /* top: 6px; */
+  /* right: 8px; */
+}
+.post-info {
+  /* position: relative; */
+}
+```
+
+## 푸터 만들기
+index.html
+```diff
+- <footer></footer>
+```
+```html
+<footer>
+  <div class="active"><span class="material-icons-outlined">home</span></div>
+  <div><span class="material-icons">people</span></div>
+  <div><span class="material-icons-outlined">live_tv</span></div>
+  <div><span class="material-icons-outlined">account_circle</span></div>
+  <div><span class="material-icons-outlined">notifications_none</span></div>
+  <div><span class="material-icons-outlined">menu</span></div>
+</footer>
+```
+
+index.css
+```css
+footer {
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* display: flex; */
+  /* width: 100%; */
+  /* background-color: white; */
+  /* color: #7B7A7C; */
+}
+footer div {
+  /* flex: 1; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 8px; */
+}
+footer div.active {
+  /* border-top: 2px solid #1A78F2; */
+}
+```
+
+* ❔ 문제: 스크롤을 올렸을 때 감우성 사진이 푸터 보다 위로 보이는 문제
+* <details><summary>정답</summary>
+
+  ```css
+  footer {
+    z-index: 1;
+  }
+  ```
+</details>
