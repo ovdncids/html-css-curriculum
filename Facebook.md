@@ -265,12 +265,6 @@ index.css
   /* left: 14px; */
   /* z-index: 1; */
 }
-.story .story-make {
-  /* position: absolute; */
-  /* top: 130px; */
-  /* left: 18px; */
-  /* font-size: 12px; */
-}
 .story .cover {
   /* height: 50px; */
   /* background-color: #F5F6F9; */
@@ -278,6 +272,12 @@ index.css
   /* width: 100px; */
   /* top: 105px; */
   /* border-radius: 0 0 12px 12px; */
+}
+.story .story-make {
+  /* position: absolute; */
+  /* top: 130px; */
+  /* left: 18px; */
+  /* font-size: 12px; */
 }
 .story .add-circle {
   /* position: absolute; */
