@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Refrigerator Expiry Date</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        RED
+      </div>
+      <div>
+        <a href="/" id="menu-a-home"><span class="material-icons-outlined">home</span></a>
+      </div>
+      <div>
+        <a href="./groceries.html" class="active" id="menu-a-groceries"><span class="material-icons-outlined">fact_check</span></a>
+      </div>
+      <div class="menu-items">
+        <a href="./items.html" id="menu-a-items"><span class="material-icons">list</span></a>
+        <div><span id="menu-items-couter">1</span></div>
+      </div>
+    </header>
+    <div class="contents">
+      <article>
+        <form>
+          <div class="form-inputs">
+            <input type="text" name="name">
+            <button class="button-create"><span class="material-icons">edit</span></button>
+          </div>
+          <div class="div-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Move</th>
+                  <th>
+                    <span class="title-names">
+                      Name
+                      <span class="material-icons active">arrow_drop_up</span>
+                      <span class="material-icons">arrow_drop_down</span>
+                    </span>
+                  </th>
+                  <th>
+                    <span class="title-names">
+                      Enter
+                      <span class="material-icons">arrow_drop_up</span>
+                      <span class="material-icons">arrow_drop_down</span>
+                    </span>
+                  </th>
+                  <th>
+                    <span class="title-names">
+                      Expire
+                      <span class="material-icons">arrow_drop_up</span>
+                      <span class="material-icons">arrow_drop_down</span>
+                    </span>
+                  </th>
+                  <th>Del</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>사과</td>
+                  <td>2021-01-01</td>
+                  <td class="td-expire"><input type="date" value="2021-02-02"></td>
+                  <td class="td-delete">
+                    <button class="button-delete" onclick="return false;"><span class="material-icons">delete</span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>바나나</td>
+                  <td>2021-01-01</td>
+                  <td class="td-expire"><input type="date" value="2021-02-02"></td>
+                  <td class="td-delete">
+                    <button class="button-delete" onclick="return false;"><span class="material-icons">delete</span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>딸기</td>
+                  <td>2021-01-01</td>
+                  <td class="td-expire"><input type="date" value="2021-02-02"></td>
+                  <td class="td-delete">
+                    <button class="button-delete" onclick="return false;"><span class="material-icons">delete</span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>키위</td>
+                  <td>2021-01-01</td>
+                  <td class="td-expire"><input type="date" value="2021-02-02"></td>
+                  <td class="td-delete">
+                    <button class="button-delete" onclick="return false;"><span class="material-icons">delete</span></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </article>
+    </div>
+    <footer>© 2021. RED Co. all rights reserved.</footer>
+  </div>
+</body>
+</html>
