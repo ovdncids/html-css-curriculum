@@ -12,6 +12,8 @@
 
 * [그림자](BoxShadow.md)
 
+* [파비콘](Favicon.md)
+
 * [인스타그램 클론](Instagram.md)
 
 * [페이스북 클론](Facebook.md)
