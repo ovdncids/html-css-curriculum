@@ -1,0 +1,11 @@
+@charset "utf-8";
+body,header,footer,main,section,article,div,aside,nav,address,h1,h2,h3,h4,h5,h6,p, blockquote,ol,ul,li,dt,dd,form,fieldset,legend,input,textarea,select,option,button, figure,figcaption,table,tbody,tr,th,td,thead,tfoot,caption{
+  margin:0px;  padding:0px;
+}
+a{  text-decoration:none; color:#333;  }
+img{  display:block;  border:0px;   }
+ol,ul{  list-style:none;    }
+em,address,i{   font-style:normal;  }
+legend,caption{   display:none;     }
+table{  border-collapse:collapse;  border-spacing:0px;   }
+textarea{  resize:none;     }

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Michelin Guide</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta name="description" content="미쉐린가이드">
+    <meta name="keywords" content="미쉐린가이드,미슐랭,3스타,2스타,1스타">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/bliss-slider.js"></script>
+    <script src="js/jquery.fadethis.min.js"></script>
+    <script src="js/mg_jquery.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+    <header id="main_header">
+        <h1><a href="#">Michelin Guide</a></h1>
+        <button type="button" class="toggle">전체메뉴</button> 
+        <nav class="tnb">
+            <ul>
+                <li>
+                    <a href="#">SEOUL</a>
+                </li>
+                <li class="lang">
+                    <a href="#">한국어</a>
+                    <div>
+                        <a href="#">ENG</a>
+                        <a href="#">CHN</a>
+                        <a href="#">JPN</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#">Brand Story</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Megazine</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="btn_subscribe">
+                <div>
+                    미쉐린가이드 구독하기
+                </div>
+            </div>
+            <button type="button" class="close">메뉴닫기</button>
+            <div class="black_bg"></div>
+        </nav>
+    </header>
+    <main id="main_content">
+        <section class="main_banner">
+            <div id="slider" class="slider-container">
+                <ul class="slider">
+                    <li class="slide">
+                        <div class="slide-bg">
+                            <img src="img/main_banner_1.jpg" alt="dessert image" draggable="false">
+                        </div>
+                        <div class="text_box">
+                            <strong>
+                                서울에서 맛보는<br>
+                                파리 디저트
+                            </strong>
+                            <p>
+                                파리에 가지 않아도 서울에서<br>
+                                맛볼 수 있는 프랑스 디저트의 세계
+                            </p>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-bg">
+                            <img src="img/main_banner_2.jpg" alt="pasta image" draggable="false">
+                        </div>
+                        <div class="text_box">
+                            <strong>
+                                비즈니스 런치하기<br>
+                                좋은 레스토랑
+                            </strong>
+                            <p>
+                                편안한 분위기에서 좋은 인상을 줄 수 있는<br>
+                                레스토랑 선별
+                            </p>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-bg">
+                            <img src="img/main_banner_3.jpg" alt="food image" draggable="false">
+                        </div>
+                        <div class="text_box">
+                            <strong>
+                                지속가능성을 실천하는<br>
+                                그린스타 레스토랑
+                            </strong>
+                            <p>
+                                전 세계가 코로나 팬더믹을 겪은 상황에서<br>
+                                셰프들은 지속가능한 미식을 위해 어떤 노력을 할까?
+                            </p>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider-controls">
+			    <ul class="slide-list">
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+			    </ul>
+		    </div>
+            <div id="element"></div>
+
+            <script type="text/javascript">
+                $(function() {
+                    $("#slider").blissSlider({
+                        auto: 1,
+                        transitionTime: 500,
+                        timeBetweenSlides: 4000
+                    });
+                });
+            </script>
+        </section>
+        <section class="main_banner_mobile">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/main_banner_1.jpg" alt="dessert image" draggable="false"></div>
+                    <div class="swiper-slide"><img src="img/main_banner_2.jpg" alt="pasta image" draggable="false"></div>
+                    <div class="swiper-slide"><img src="img/main_banner_3.jpg" alt="food image" draggable="false"></div>
+                </div>
+              <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="search_wrap">
+            <div class="innerbox">
+                <h3 class="search_title">미쉐린 레스토랑 검색하기</h3>
+                <p class="search_content">미쉐린만의 기준으로 엄별한 서울의 176개의 레스토랑을 만나보세요.</p>
+                <form action="#" method="get">
+                    <select id="star" name="star">
+                        <option value="" selected>별점</option>
+                        <option value="1스타">1스타</option>
+                        <option value="2스타">2스타</option>
+                        <option value="3스타">3스타</option>
+                    </select>
+                    <select id="category" name="요리법">
+                        <option value="" selected>요리법</option>
+                        <option value="프렌치">프렌치</option>
+                        <option value="아메리칸">아메리칸</option>
+                        <option value="이탈리안">이탈리안</option>
+                        <option value="아시안">아시안</option>
+                        <option value="한식">한식</option>
+                        <option value="중식">중식</option>
+                        <option value="일식">일식</option>
+                        <option value="베지테리안">베지테리안</option>
+                    </select>
+                    <div id="chef_search">
+                        <input type="text" id="searchbox" name="searchbox" placeholder="레스토랑, 셰프 검색하기">
+                        <button class="search" type="submit"></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="restaurant_wrap slide-bottom">
+            <div class="innerbox">
+                <h2>Restaurant</h2>
+                <div class="contentbox">
+                    <figure>
+                        <a href="#"><img src="img/main_restaurent_1.jpg" alt="~레스토랑이미지"></a>  
+                        <figcaption>
+                            <strong>가성비 BEST</strong>
+                            <h3>도우룸<span>이탈리안</span></h3>
+                            <p>서울시 서초구 동광로 99 2층</p>                        
+                            <p class="icon_wrap">
+                                <em>dish</em>
+                                <span class="icon">
+                                    <a href="#">info</a>
+                                    <span>가성비가 좋은 곳</span>
+                                </span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="#"><img src="img/main_restaurent_2.jpg" alt="레스토랑이미지"></a>
+                        <figcaption>
+                            <strong>요리 BEST</strong>
+                            <h3>크리스탈 제이드<span>중식</span></h3>
+                            <p>서울시 중구 남대문로 7길 16 지하 1층</p>
+                            <p class="icon_wrap">
+                                <em>dish</em>
+                                <span class="icon">
+                                    <a href="#">info</a>
+                                    <span>좋은요리를 맛볼 수 있는 곳</span>
+                                </span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="#"><img src="img/main_restaurent_3.jpg" alt="레스토랑이미지"></a>
+                        <figcaption>
+                            <strong>분위기&amp;요리 BEST</strong>
+                            <h3>소설한남<span>한식</span></h3>
+                            <p>서울시 용산구 한남대로 20길 21-18 지하 1층</p>
+                            <p class="icon_wrap">
+                                <em>dish</em>
+                                <span class="icon">
+                                    <a href="#">info</a>
+                                    <span>좋은요리에 분위기도 겸비한 곳</span>
+                                </span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <a href="#">more</a>
+            </div>
+        </section>
+        <section class="magazine_wrap slide-bottom">
+            <div class="innerbox">
+                <h2>Magazine</h2>
+                <div class="contentbox">
+                    <div class="wrap">
+                        <div><a href="#"><img src="img/main_magazine_1.jpg" alt="셰프이미지"></a></div>
+                        <div class="textbox">
+                            <h3>People</h3>
+                            <p>
+                                손종원 셰프가<br>
+                                접시위에 선보이는<br>
+                                현대 한국의 풍경
+                            </p>
+                            <p>
+                                #셰프인터뷰 #inspiration<br>
+                                #seoul
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div><a href="#"><img src="img/main_magazine_2.jpg" alt="스테이크이미지"></a></div>
+                        <div class="textbox">
+                            <h3>Dining In</h3>
+                            <p>
+                                미쉐린 스타 셰프들이<br>
+                                제안하는 홈쿠킹<br>
+                                스테이크 레시피
+                            </p>
+                            <p>
+                                #스테이크 #스테이크잘굽는법<br>
+                                #french stylel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div><a href="#"><img src="img/main_magazine_3.jpg" alt="마카롱이미지"></a></div>
+                        <div class="textbox">
+                            <h3>Feature</h3>
+                            <p>
+                                피에르에르메 셰프의<br>
+                                아주 특별한<br>
+                                초콜릿마카롱 레시피
+                            </p>
+                            <p>
+                                #홈베이킹 #초콜릿마카롱<br>
+                                #dessert
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div><a href="#"><img src="img/main_magazine_4.jpg" alt="소바이미지"></a></div>
+                        <div class="textbox">
+                            <h3>Dining Out</h3>
+                            <p>
+                                미쉐린 레스토랑<br>
+                                여름특선<br>
+                                시원한 미식여행
+                            </p>
+                            <p>
+                                #여름음식 #냉면맛집<br>
+                                #summer in seoul
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">more</a>
+                <div class="mobileslidercontent">
+                    <div class="slider">
+                        <div class="wrap_1"></div><div class="wrap_2"></div><div class="wrap_3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brandstory_wrap slide-bottom">
+            <div class="innerbox">
+                <img src="img/main_brandstory_book.png" alt="book">
+                <div class="wrap">
+                    <div class="textbox">
+                        <h2>
+                        <span>Michelin Guide</span><br>
+                        Brand Story
+                        </h2>
+                        <p>
+                            자동차가 3,000대 밖에 없던 시절, 선경지명으로 타이어 회사를 운영하던<br>
+                            미쉐린 형제의 기발한 마케팅 아이디어 하나로 탄생한<br>
+                            미쉐린 가이드의 역사와 비밀 평가단 이야기
+                        </p>
+                        <a href="#">direct</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="instagram_wrap slide-bottom">
+            <div class="innerbox">
+                <div class="content_header">
+                    <h2>Instagram</h2>
+                </div>
+                <ul>
+                    <li><a href="#"><img src="img/main_instagram_1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_4.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_6.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_7.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_8.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_9.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_10.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_11.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main_instagram_12.jpg" alt=""></a></li>
+                </ul>
+                <a href="#">follow our instagram</a>
+            </div>
+        </section>
+    </main>
+    <footer id="main_footer">
+        <div class="innerbox">
+            <h3>logo</h3>
+            <div class="textbox">
+                <strong>미쉐린가이드 최신 정보 받아보기</strong>
+                <p>뉴스레터를 구독하고 미쉐린 가이드에 대한 최신 뉴스 및 업데이트를 가장 먼저 받아보세요.</p>
+            </div>
+            <form action="#" method="get">
+                <input type="text" id="subscribe" name="subscribe" placeholder="이메일을 입력해주세요.">
+                <button type="submit" id="btn" name="btn">JOIN</button>
+            </form>
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">쿠키설정</a></li>
+                    <li><a href="#">개인정보 보호정책</a></li>
+                    <li><a href="#">광고문의</a></li>
+                </ul>
+            </div>
+            <p>
+                Copyright &copy; 2021 MICHELIN Guide. All rights reserved.
+            </p> 
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
