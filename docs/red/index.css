@@ -70,6 +70,27 @@ header a.active {
   justify-content: center;
   align-items:baseline;
 }
+.empty {
+  flex: 1;
+}
+ul.account-menu {
+  display: none;
+  position: absolute;
+  top: 44px;
+  right: 12px;
+  min-width: 80px;
+  border: 1px solid rgb(59, 59, 59);
+  background: white;
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+}
+ul.account-menu.active {
+  display: block;
+}
+ul.account-menu li {
+  padding: 0.5rem 1rem;
+}
 
 .contents {
   flex-grow: 1;

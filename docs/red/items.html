@@ -25,6 +25,16 @@
         <a href="./items.html" class="active" id="menu-a-items"><span class="material-icons">list</span></a>
         <div><span id="menu-items-counter">1</span></div>
       </div>
+      <div class="empty"></div>
+      <div>
+        <a href="#" id="menu-a-account" onclick="accountToggle(); return false;">
+          <span class="material-icons-outlined">account_circle</span>
+          <ul class="account-menu">
+            <li>Guest</li>
+            <li>Login</li>
+          </ul>
+        </a>
+      </div>
     </header>
     <div class="contents">
       <article>
@@ -296,6 +306,9 @@
 </body>
 </html>
 <script>
+const accountToggle = function() {
+  document.getElementsByClassName('account-menu')[0].classList.toggle('active');
+}
 const modalToggle = function() {
   document.body.classList.toggle('o-hidden');
   document.getElementsByClassName('modal-background')[0].classList.toggle('active');
