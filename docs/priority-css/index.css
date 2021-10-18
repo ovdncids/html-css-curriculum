@@ -41,7 +41,7 @@ li:first-child {
 /* 문제: .animal을 우선순위로 보이려면 */
 
 a#people {
-  background-color: blue;
+  background-color: fuchsia;
 }
 
 /*
