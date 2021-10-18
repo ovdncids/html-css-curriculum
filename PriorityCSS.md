@@ -78,9 +78,13 @@ li:first-child {
 ### id(#): 100점
 ```css
 a#people {
-  background-color: blue;
+  background-color: fuchsia;
 }
-/* :link는 크롬에서 확인 할 수 없다 */
+/*
+ * :link는 :visited 이전 상황이다
+ * :visited 이후에 크롬에서 방문기록을 삭제 하면, :link를 다시 볼 수 있다
+ * 개발자 도구에서는 :link로 되어 있지만, :visited이 보이고 있을 수 있다
+ */
 a#people:link {
   color: red;
   text-decoration: none;
@@ -96,7 +100,7 @@ a#people:hover {
 }
 a#people:active {
   color: purple;
-  background-color: purple;
+  background-color: aqua;
 }
 ```
 
