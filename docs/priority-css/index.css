@@ -67,6 +67,6 @@ a#people:active {
 }
 
 /* !important: 최고점 */
-li a {
-  background-color: skyblue !important;
+li.sky {
+  /* background-color: skyblue !important; */
 }
