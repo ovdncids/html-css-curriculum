@@ -72,7 +72,7 @@ position: fixed;
 * ❔ `.parent` class에 `position` 비활성화
 
 ## sticky
-* IE에서 작동 안함.
+* IE에서 작동 안함
 
 ## 참조
 https://developer.mozilla.org/ko/docs/Web/CSS/position
