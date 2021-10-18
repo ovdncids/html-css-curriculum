@@ -78,7 +78,7 @@ li:first-child {
 ### id(#): 100점
 ```css
 a#people {
-  background-color: fuchsia;
+  background-color: lime;
 }
 /*
  * :link는 :visited 이전 상황이다
