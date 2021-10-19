@@ -2,6 +2,7 @@
 * [데모](https://ovdncids.github.io/html-css-curriculum/priority-css)
 
 ## HTML
+index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +24,7 @@
 
 ## CSS
 ### 모든것(*): 0점
+index.css
 ```css
 * {
   padding: 4px;
