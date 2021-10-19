@@ -105,7 +105,7 @@ a#people:active {
 }
 ```
 
-### style속정: 1000점
+### style속: 1000점
 ```diff
 - <li>하늘</li>
 ```
