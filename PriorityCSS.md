@@ -84,6 +84,7 @@ a#people {
  * :link는 :visited 이전 상황이다
  * :visited 이후에 크롬에서 방문기록을 삭제 하면, :link를 다시 볼 수 있다
  * 개발자 도구에서는 :link로 되어 있지만, :visited이 보이고 있을 수 있다
+ * :active는 마우스 다운을 뜻 한다
  */
 a#people:link {
   color: red;
