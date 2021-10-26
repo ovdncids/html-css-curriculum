@@ -11,6 +11,7 @@ index.html
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>미디어 쿼리</title>
+  <link href="./index.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -33,11 +34,6 @@ index.html
 </html>
 ```
 
-## CSS 파일 연결 하기
-```html
-  <head>
-    <link href="./index.css" rel="stylesheet">
-```
 index.css
 ```css
 body {
@@ -52,7 +48,7 @@ ul {
 }
 ```
 * `ol`(Ordered List) 태그와 비교
-* ❔ `li` 태그에 `::marker` 설명
+* ❕ `li` 태그에 `::marker` 설명
 
 ### li 태그에 스타일 적용
 ```css
@@ -80,7 +76,7 @@ li {
 }
 ```
 * `ul` 태그가 `font-size: 0;` 일때 `margin` 없어지는것 확인
-* 아이템 사이 공백 설명
+* 아이템 사이 공백 설명 (`li` 태그 사이에 문자 넣어 보기)
 
 ### 문서 가운데 정렬 하기
 ```css
@@ -107,7 +103,7 @@ li {
 @media screen and (max-width: 899px) {
   .container {
     width: 600px;
-    color: #EA4335;
+    color: #FBBC05;
   }
 }
 ```
