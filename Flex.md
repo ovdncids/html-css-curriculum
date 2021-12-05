@@ -42,7 +42,7 @@ index.html
   </body>
 ```
 **이모지**
-https://www.emojiengine.com/ko/
+https://www.emojiengine.com/ko
 
 ## section, header 태그 설명
 ```html
