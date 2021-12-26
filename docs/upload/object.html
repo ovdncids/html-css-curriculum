@@ -1,0 +1,21 @@
+<script>
+const object2 = {
+  key1: '값1',
+  key2: [1, 2, 3],
+  key3: function() {
+    // console.log(this.key1);
+    return this;
+  },
+  key4: {
+    k1: 'v1',
+    k2: 'v2'
+  }
+};
+
+for (const c1 in object2) {
+  const value1 = object2[c1];
+  console.log(c1);
+  console.log(value1);
+  console.log(object2.c1);
+}
+</script>
