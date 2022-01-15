@@ -49,15 +49,15 @@ header a.active {
   color: rgb(189, 3, 3);
   font-weight: bold;
 }
-.menu-items {
+.menu-groceries {
   position: relative;
 }
-.menu-items div {
+.menu-groceries div {
   position: absolute;
   top: 2px;
   left: 16px;
 }
-.menu-items div #menu-items-counter {
+.menu-groceries div #menu-groceries-counter {
   min-width: 17px;
   min-height: 16px;
   padding: 1px 3px 3px 3px;
