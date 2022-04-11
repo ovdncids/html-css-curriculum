@@ -124,7 +124,7 @@ li {
 * 미디어 쿼리에 우선 순위 설명
 
 ## 구글 폰트 적용
-https://fonts.google.com/
+https://fonts.google.com
 
 index.html
 ```html
