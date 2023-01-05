@@ -75,6 +75,27 @@ position: fixed;
 * IE에서 작동 안함
 
 ## 참조
-https://developer.mozilla.org/ko/docs/Web/CSS/position
+* https://developer.mozilla.org/ko/docs/Web/CSS/position
+* https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index
 
-https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index
+## 레이어 팝업의 width 자동으로 컨텐츠 크기로 받기
+```html
+<ul class="menus">
+  <li class="menu">
+    <h2>메뉴</h2>
+    <ul class="sub-menus">
+      <li>서브 메뉴</li>
+    </ul>
+  </li>
+</ul>
+```
+```css
+.menu {
+  position: relative;
+}
+.sub-menus {
+  background-color: beige;
+  position: absolute;
+  white-space: nowrap;
+}
+```
