@@ -32,7 +32,7 @@ position: static;
 position: relative;
 ```
 * static과 같이 문서 안에서 자신의 영역을 유지한다.
-* `top, right, bottom, left` 위치를 변경 하면, 자신의 영역은 그대로지만 해당 위치에만 떠 있게 된다.
+* `top, right, bottom, left` 위치를 변경하면, 자신의 영역은 그대로지만 해당 위치에만 떠 있게 된다.
 * ❔ `.relative` class에 `top: 50px;` `left: 50px;` 적용
 * ❔ `position: relative;` 활성화, 비활성화 하기
 * `z-index: 0;` 보다 작지 않으면 항상 `position: static;` 보다 위에 보이게 된다
