@@ -1,0 +1,47 @@
+html, body, .parent {
+  margin: 0;
+  height: 100%;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.a {
+  position: relative;
+}
+
+.a1 {
+  position: fixed;
+  background-image: linear-gradient(to bottom, red, yellow);
+  width: 200px;
+  height: 100%;
+}
+.a2 {
+  background-color: black;
+  width: 200px;
+  height: 1600px;
+}
+
+.b {
+  background-image: linear-gradient(to bottom, green, blue);
+  min-width: 200px;
+  height: 100%;
+}
+
+.c {
+  position: relative;
+}
+
+.c1 {
+  position: fixed;
+  background-image: linear-gradient(to bottom, black, white);
+  min-width: 200px;
+  height: 100%;
+}
+
+.c2 {
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+}
