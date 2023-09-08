@@ -1,4 +1,5 @@
 # 가운데 정렬이면서 위치 고정
+* [데모](https://ovdncids.github.io/html-css-curriculum/center-fixed)
 
 index.html
 ```html
